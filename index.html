@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Welcome to My Website</h1>
+            <p class="mt-2">A simple and modern webpage</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-blue-600 hover:text-blue-800">Home</a></li>
+                <li><a href="#about" class="text-blue-600 hover:text-blue-800">About</a></li>
+                <li><a href="#contact" class="text-blue-600 hover:text-blue-800">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section id="home" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Home</h2>
+            <p class="text-gray-700">Welcome to my simple website! This is a clean and responsive webpage built with HTML, Tailwind CSS, and a bit of JavaScript. Explore the sections below to learn more.</p>
+        </section>
+
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">About</h2>
+            <p class="text-gray-700">This website is a demonstration of a basic web structure. It includes a header, navigation, main content, and a footer. The design is minimalistic yet functional, perfect for small projects or portfolios.</p>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+            <p class="text-gray-700 mb-4">Have questions? Reach out to us!</p>
+            <button id="contactButton" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Click Me!</button>
+            <p id="contactMessage" class="text-gray-700 mt-4 hidden">Thank you for clicking! You can reach us at example@email.com.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            document.getElementById('contactMessage').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
